@@ -1,0 +1,35 @@
+/* استایل پنل مدیریت قالب فرتاک */
+.wrap h1 .dashicons { color: #e11d2a; vertical-align: middle; }
+.form-table th { font-weight: 600; }
+.fartak-color-field { max-width: 120px; }
+
+/* انتخابگر ترتیبی محصولات صفحه اصلی */
+.ft-pick { background: #fff; border: 1px solid #dcdcde; border-radius: 10px; padding: 14px 16px 18px; margin: 18px 0; }
+.ft-pick-head { display: flex; align-items: center; gap: 6px; margin: 0 0 4px; font-size: 15px; color: #1d2327; }
+.ft-pick-head .dashicons { color: #e11d2a; }
+.ft-pick-cap { margin: 0 0 6px; font-size: 12px; color: #646970; }
+.ft-pick-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+.ft-pk-search { width: 100%; margin-bottom: 8px; }
+.ft-pick-box { max-height: 320px; overflow-y: auto; border: 1px solid #dcdcde; border-radius: 8px; background: #f6f7f7; }
+.ft-pk-none { padding: 16px; text-align: center; color: #8c8f94; font-size: 12px; }
+.ft-pk-item { display: flex; align-items: center; gap: 8px; width: 100%; text-align: right; background: transparent; border: 0; border-bottom: 1px solid #e7e8ea; padding: 7px 10px; cursor: pointer; transition: background .15s; }
+.ft-pk-item:hover { background: #e9eef5; }
+.ft-pk-item.picked { opacity: .45; }
+.ft-pk-item.picked .ft-pk-add { color: #b32d2e; }
+.ft-pk-thumb { flex-shrink: 0; width: 34px; height: 34px; border-radius: 6px; overflow: hidden; background: #dcdcde; display: flex; align-items: center; justify-content: center; }
+.ft-pk-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.ft-pk-noimg { color: #8c8f94; font-weight: 700; }
+.ft-pk-txt { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.ft-pk-name { font-size: 12.5px; font-weight: 600; color: #1d2327; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ft-pk-meta { font-size: 10.5px; color: #8c8f94; }
+.ft-pk-add { flex-shrink: 0; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; border-radius: 6px; background: #e11d2a; color: #fff; font-weight: 900; font-size: 14px; }
+.ft-pick-list { min-height: 120px; border: 1px dashed #c3c4c7; border-radius: 8px; padding: 8px; background: #fbfbfc; display: flex; flex-direction: column; gap: 6px; max-height: 320px; overflow-y: auto; }
+.ft-pk-chip { display: flex; align-items: center; gap: 8px; background: #fff; border: 1px solid #dcdcde; border-radius: 8px; padding: 6px 8px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+.ft-pk-idx { flex-shrink: 0; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #e11d2a; color: #fff; font-size: 11px; font-weight: 900; }
+.ft-pk-chip .ft-pk-thumb { width: 28px; height: 28px; }
+.ft-pk-chip .ft-pk-txt { flex: 1; min-width: 0; }
+.ft-pk-chip .ft-pk-name { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ft-pk-acts { flex-shrink: 0; display: flex; gap: 3px; }
+.ft-pk-acts .button { padding: 0 6px; min-height: 22px; line-height: 20px; font-size: 10px; }
+.ft-pk-rm { color: #b32d2e !important; }
+@media (max-width: 960px) { .ft-pick-cols { grid-template-columns: 1fr; } }
